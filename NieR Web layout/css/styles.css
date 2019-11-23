@@ -1,0 +1,508 @@
+/* *********************
+*********PIRMAS DARBAS***********
+******************************* */
+
+#wrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+ margin: 0;
+}
+
+.bg1 {
+  background: url(../../img/desert-bg2.png) 0 100% repeat-x;
+  animation: bg1 linear 10s infinite;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+@keyframes bg1 {
+  0% {background-position: 1600px 100px;}
+  100% {background-position: 0 100%;}
+  0% {opacity: 1;}
+  25% {opacity: 1;}
+  75% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.bg2 {
+  background: url(../../img/desert-bg1.png) 0 100% repeat-x;
+  animation: bg2 linear 10s infinite;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+@keyframes bg2 {
+  0% {background-position: 1600px 100px;}
+  100% {background-position: 0 100%;}
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  55% {opacity: 0;}
+  85% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.char1 {
+  background: url(../../img/ch1.png) 0 0 no-repeat;
+  height: 150px;
+  width: 110px;
+  position: absolute;
+  bottom: 60px;
+  animation: ch1move 2s steps(7) infinite;
+}
+@keyframes ch1move {
+  0% {transform: scaleX(1);background-position: 0 0; left: 20%;}
+  54% {transform: scaleX(1);}
+  55% {transform: scaleX(-1); left: 50%;}
+  100% {transform: scaleX(-1);background-position: 100% 0; left:20%;}
+}
+
+.char12 {
+  background: url(../../img/ch1.png) 0 0 no-repeat;
+  height: 150px;
+  width: 110px;
+  position: absolute;
+  bottom: 60px;
+  animation: ch1move2 0.7s steps(7) infinite;
+}
+@keyframes ch1move2 {
+  0% {background-position: 0 0;}
+  100% {background-position: 100% 0;}
+}
+
+.sun {
+  background: url(../../img/sun.png) 0 0 no-repeat;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: 600px;
+  animation: sunny 10s infinite;
+}
+@keyframes sunny {
+  0% {bottom: 300px; opacity: 1;  transform:rotate(0deg);}
+  25% {bottom: 150px; opacity: 1;  transform:rotate(50deg);}
+  50% {bottom: 150px; opacity: 1;  transform:rotate(100deg);}
+  60% {bottom: 150px; opacity: 1;  transform:rotate(150deg);}
+  75% {bottom: 150px; opacity: 1;  transform:rotate(150deg);}
+  100% {bottom: 350px; opacity: 1;  transform:rotate(360deg);}
+}
+
+.sun2 {
+  background: url(../../img/sun2.png) 0 0 no-repeat;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: 600px;
+  animation: sunny2 10s infinite;
+}
+@keyframes sunny2 {
+  0% {bottom: 300px; opacity: 0; transform:rotate(0deg);}
+  25% {bottom: 150px; opacity: 0; transform:rotate(50deg);}
+  50% {bottom: 150px; opacity: 0; transform:rotate(100deg);}
+  60% {bottom: 150px; opacity: 1; transform:rotate(150deg);}
+  75% {bottom: 150px; opacity: 1; transform:rotate(150deg);}
+  100% {bottom: 350px; opacity: 1; transform:rotate(360deg);}
+}
+
+.ch2left {
+  background: url(../../img/ch2left.png) 0 0 no-repeat;
+  width: 90px;
+  height: 84px;
+  position: absolute;
+  animation: ch2leftmove 0.7s steps(8) infinite;
+  left: 700px;
+  bottom: 50px;
+}
+@keyframes ch2leftmove {
+  0% {background-position: 0 0;  }
+  100% {background-position: -768px 0;  }
+}
+.ch2right {
+  background: url(../../img/ch2right.png) 0 0 no-repeat;
+  width: 90px;
+  height: 84px;
+  position: absolute;
+  animation: ch2rightmove 2s steps(8) infinite;
+  bottom: 50px;
+}
+@keyframes ch2rightmove {
+  0% {transform: scaleX(1);background-position: 0 0; left: 35%; }
+  54% {transform: scaleX(1);}
+  55% {transform: scaleX(-1); left:70%; }
+  100% {transform: scaleX(-1);background-position: -768px 0; left: 35%; }
+}
+
+.pokstis {
+  background: url(../../img/pokstis.png) 0 0 no-repeat;
+  width: 7%;
+  height: 170px;
+  position: absolute;
+  bottom: 100px;
+  background-size: 70vw;
+  animation: pokstismove 1s steps(12) infinite;
+}
+@keyframes pokstismove {
+  0% {background-position: 0 0; left: 0;}
+  100% {background-position: 100% 0; left: 100%;}
+}
+
+.weeblord {
+  background: url(../../img/weeblord.png) 0 0 no-repeat;
+  position: absolute;
+  background-size: 100vw;
+  bottom: 10px;
+  left: 10px;
+  width: 1000;
+  height: 1000;
+  animation: wyblords 10s infinite ;
+  animation-delay: 3s;
+}
+@keyframes wyblords {
+  0% {transform: scaleX(1);background-position: 0 0; left: -100%; top: -100%;}
+  50% {transform: scaleX(0.5);transform: scaleY(0.8);background-position: 0 0; left: 100%; top:100%;}
+  100% {transform: scaleX(1);background-position: 0 0; left: -150%; top: -150%;}
+}
+
+.meteor {
+  background: url(../../img/meteor.png) 0 0 no-repeat;
+  position: absolute;
+  background-size: 5vw;
+  bottom: 10px;
+  left: 10px;
+  width: 100;
+  height: 150;
+  animation: meteoras 5s infinite ;
+}
+@keyframes meteoras {
+  0% {transform: scaleX(1);background-position: 0 0; left: 0%; top: 0%;}
+  50% {transform: scaleX(0.5);transform: scaleY(0.8);background-position: 0 0; left: 50%; top:50%;}
+  100% {transform: scaleX(1);background-position: 0 0; left: 150%; top: -150%;}
+}
+
+/* *********************
+*********ANTRAS DARBAS***********
+******************************* */
+
+#area {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+#mainbg {
+  background: url(../../img/mainbg.png) repeat-x;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+}
+#forebg {
+  background: url(../../img/forebg.png) repeat-x;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+}
+#pillars {
+  background: url(../../img/pillars.png) repeat-x;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+}
+#veipas {
+  background: url(../../img/veipas.png) repeat-x;
+  height: 450px;
+  width: 100%;
+  position: absolute;
+}
+
+#boy {
+  background: url(../../img/bernioks.png) no-repeat;
+  height: 144px;
+  width: 108px;
+  top: 50%;
+  left: 25%;
+  position: absolute;
+}
+#test {
+  background: url(../../img/test.png) no-repeat;
+  height: 101px;
+  width: 75.5px;
+  top: 55%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+
+#bug {
+  background: url(../../img/bug.png) no-repeat;
+  height: 76px;
+  width: 62.1px;
+  top: 70%;
+  left: 20%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+
+#infected {
+  background: url(../../img/infected.png) no-repeat;
+  height: 55px;
+  width: 50px;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+
+#bug2 {
+  background: url(../../img/bug.png) no-repeat;
+  height: 76px;
+  width: 62.1px;
+  top: 50%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+
+#infected2 {
+  background: url(../../img/infected.png) no-repeat;
+  height: 55px;
+  width: 50px;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+#infected3 {
+  background: url(../../img/infected.png) no-repeat;
+  height: 55px;
+  width: 50px;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+#infected4 {
+  background: url(../../img/infected.png) no-repeat;
+  height: 55px;
+  width: 50px;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+#infected5 {
+  background: url(../../img/infected.png) no-repeat;
+  height: 55px;
+  width: 50px;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+#infected6 {
+  background: url(../../img/infected.png) no-repeat;
+  height: 55px;
+  width: 50px;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+#infected7 {
+  background: url(../../img/infected.png) no-repeat;
+  height: 55px;
+  width: 50px;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  transform: rotateY(180deg)
+}
+
+.redskull {
+  background: url(../../img/blueskull.png) 0 0 no-repeat;
+  height: 142px;
+  width: 123px;
+  top: 20%;
+  left: 70%;
+  position: absolute;
+  animation: redskull 0.4s steps(6) infinite, redskullmove 5s infinite, rskullf 10s linear infinite;
+}
+@keyframes redskull {
+  0% {background-position: 0 0;}
+  100% {background-position: -743px 0;}
+}
+@keyframes redskullmove {
+  0% {left: 70%; top: 20%;transform: rotate(10deg);}
+  20% {transform: rotate(-10deg);}
+  40% {transform: rotate(20deg);}
+  60% {left: 35%; top: 40%;transform: rotate(0deg);}
+  80% {left: 70%; top: 20%;transform: rotate(-20deg);}
+  100% {left: 70%; top: 20%;transform: rotate(-10deg);}
+}
+
+.blueskull {
+  background: url(../../img/redskull.png) 0 0 no-repeat;
+  height: 142px;
+  width: 123px;
+  top: 20%;
+  left: 70%;
+  position: absolute;
+  animation: blueskull 0.4s steps(6) infinite, blueskullmove 5s infinite, bskullf 10s linear infinite;
+}
+@keyframes blueskull {
+  0% {background-position: 0 0;}
+  100% {background-position: -743px 0;}
+}
+@keyframes blueskullmove {
+  0% {left: 70%; top: 20%;transform: rotate(10deg);}
+  20% {transform: rotate(-10deg);}
+  40% {transform: rotate(20deg);}
+  60% {left: 35%; top: 40%;transform: rotate(0deg);}
+  80% {left: 70%; top: 20%;transform: rotate(-20deg);}
+  100% {left: 70%; top: 20%;transform: rotate(-10deg);}
+}
+@keyframes rskullf {
+  0% {opacity: 1;}
+  25% {opacity: 1;}
+  75% {opacity: 1;}
+  100% {opacity: 1;}
+}
+@keyframes bskullf {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  55% {opacity: 0;}
+  85% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fire1 {
+  background: url(../../img/fire1.png) 0 0 no-repeat;
+  width: 140px;
+  height: 48px;
+  top: 50%;
+  left: -15%;
+  position: absolute;
+  animation: fire1 0.3s steps(5) infinite, fire1mov 2s infinite;
+}
+@keyframes fire1 {
+ 0%{background-position: 0 0;}
+ 100%{background-position: -700px 0;}
+}
+
+@keyframes fire1mov {
+  0%{left: -15%;}
+  100%{left: 115%;}
+ }
+
+ .fire2 {
+  background: url(../../img/fire2.png) 0 0 no-repeat;
+  width: 140px;
+  height: 53px;
+  top: 30%;
+  left: -15%;
+  position: absolute;
+  transform: rotateY(180deg);
+  animation: fire2 0.3s steps(5) infinite, fire2mov 4s infinite;
+}
+@keyframes fire2 {
+ 0%{background-position: 0 0;}
+ 100%{background-position: -700px 0;}
+}
+
+@keyframes fire2mov {
+  0%{left: -15%;transform: rotate(180deg);}
+  100%{left: 115%;top: 120%;transform: rotate(220deg);}
+ }
+
+ .blyat {
+   top: 60%;
+   width: 100%;
+   height: 40%;
+   position: absolute;
+   opacity: 0;
+   background-image: linear-gradient(rgba(255,0,0,0),rgba(255, 136, 0, 0.938), rgb(255, 51, 0));
+   animation: boomblyat 4s infinite;
+
+ }
+
+ @keyframes boomblyat {
+  0%{background-image: linear-gradient(rgba(255,0,0,0),rgba(255, 136, 0, 0.938), rgb(255, 51, 0));opacity: 0;}
+  25%{background-image: linear-gradient(rgba(255,0,0,0),rgba(255, 136, 0, 0.938), rgb(255, 51, 0));opacity: 0;}
+  50%{background-image: linear-gradient(rgba(255,0,0,0),rgba(255, 136, 0, 0.938), rgb(255, 51, 0));opacity: 0.15;}
+  75%{background-image: linear-gradient(rgba(255,0,0,0),rgba(255, 136, 0, 0.938), rgb(255, 51, 0));opacity: 0;}
+  100%{background-image: linear-gradient(rgba(255,0,0,0),rgba(255, 136, 0, 0.938), rgb(255, 51, 0));opacity: 0}
+ }
+
+ #bug {
+   animation: bugbl 10s infinite;
+ }
+
+ @keyframes bugbl {
+   0%{left: -20%;}
+   100%{left: 120%;}
+ }
+
+ #infected {
+   animation: infectedbl 20s infinite;
+ }
+
+ @keyframes infectedbl {
+   0%{left: -10%;}
+   100%{left: 110%;}
+ }
+
+ #infected2 {
+   animation: infectedbl2 20s infinite;
+ }
+
+ @keyframes infectedbl2 {
+   0%{left: -20%;}
+   100%{left: 110%;}
+ }
+ #infected3 {
+   animation: infectedbl3 20s infinite;
+ }
+
+ @keyframes infectedbl3 {
+   0%{left: -30%;}
+   100%{left: 110%;}
+ }
+
+ #infected4 {
+   animation: infectedbl4 20s infinite;
+ }
+
+ @keyframes infectedbl4 {
+   0%{left: -40%;}
+   100%{left: 110%;}
+ }
+ #infected5 {
+   animation: infectedbl5 20s infinite;
+ }
+
+ @keyframes infectedbl5 {
+   0%{left: -50%;}
+   100%{left: 110%;}
+ }
+ #infected6 {
+   animation: infectedbl6 20s infinite;
+ }
+
+ @keyframes infectedbl6 {
+   0%{left: -60%;}
+   100%{left: 110%;}
+ }
+ #infected7 {
+   animation: infectedbl7 20s infinite;
+ }
+
+ @keyframes infectedbl7 {
+   0%{left: -70%;}
+   100%{left: 110%;}
+ }
