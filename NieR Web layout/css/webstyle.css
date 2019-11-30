@@ -197,8 +197,8 @@ ul.topnav li:last-child a:hover {
   width: 98%;
 }
 .kontikasbaner.centerfix {
-  margin-left: auto;
-  margin-right: auto;
+  
+  width: 98%;
   }
   .itembanercenter {
     text-align:center;

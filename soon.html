@@ -1,6 +1,6 @@
 <!<!DOCTYPE html>
 <html>
-    <title>Enimeisn</title>
+    <title>Orq - Soon</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Social icons
@@ -18,6 +18,7 @@
   </head>
 
 <body>
+
     <div id="header">
       
       <div id="bg"></div>
@@ -67,8 +68,8 @@
 <div id="ac-wrapper" style='visibility:hidden;opacity: 0;'>
     <div id="popup">
         <div class="hdrtitlebg popup">
-            <div class="hdrtitlebg2">
-              <div class="hdrtitlebg3">
+            <div class="hdrtitlebg2 popup">
+              <div class="hdrtitlebg3 popup">
       <p class="infhead">Prenumeruok ir laimėk!</p>
       </div>
         </div>
@@ -90,16 +91,21 @@
             </div>
           </div>
     </div>
-
+<div id="invisdiv"></div>
 </div>
 
 
      <div class="kontikasimg">
+        <div class="itemimg">
 
-   <p style="font-weight: bold; font-size: 70px;text-align: center;padding: 0;margin: 0;">It says soon you </p>
-   <p style="font-weight: bold; font-size: 70px;text-align: center;padding: 0;margin: 0;">(☞ﾟヮﾟ)☞ degenerate☜(ﾟヮﾟ☜) </p>
-   <p style="font-weight: bold; font-size: 70px;text-align: center;padding: 0;margin: 50;">  ಠ_ಠ </p>
 
+  <!--  <p style="font-weight: bold; font-size: 5rem;text-align: center;">It says soon you </p>
+   <p style="font-weight: bold; font-size: 5rem;text-align: center;">(☞ﾟヮﾟ)☞ degenerate☜(ﾟヮﾟ☜) </p>
+   <p style="font-weight: bold; font-size: 5rem;text-align: center;">  ಠ_ಠ </p>-->
+   <p style="font-weight: bold;text-align: center;font-size: 3.5rem;">It says soon you</p>
+   <p style="font-weight: bold;text-align: center;font-size: 3.5rem;">(☞ﾟヮﾟ)☞ degenerate☜(ﾟヮﾟ☜) </p>
+   <p style="font-weight: bold;text-align: center;font-size: 3.5rem;">ಠ_ಠ</p>
+  </div>
               </div>
 
 <footer class="container">
@@ -149,6 +155,23 @@ window.onload = function () {
   }, 3000);
 }
 
+/*
+eina isjungt click ant fono
+*/
+document.getElementById('invisdiv').onclick = function()
+{
+  document.getElementById('ac-wrapper').style.visibility = "hidden",
+  document.getElementById('ac-wrapper').style.opacity = "0",
+  document.getElementById('ac-wrapper').style.transition = "0.3s ease"; 
+}
+/*
+same for hamborga
+*/
+document.getElementById('hmbrnavbg').onclick = function()
+{
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("hmbrnavbg").style.display = "none";
+}
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "60%";
