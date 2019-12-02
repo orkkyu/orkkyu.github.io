@@ -981,35 +981,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   transition: background-color 5000s ease-in-out 0s;
 }
 
-input[type=submit] {
-  background-color: #cc0040;
-  cursor: pointer;
-  border: none;
-  padding: 16px 32px;
-  box-shadow: 0px 0px 0 #62048a, 0px 0px 0 #ff3c00;
-  color: #d8d8d8;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  transition: 0.3s;
-}
-
-input[type=submit]:hover {
-  box-shadow: 5px 0px 0 #62048a, 7px -4px 0 #ff3c00;
-}
-
-input[type=submit]:focus {
-  outline: none;
-}
-
-.btnfix {
-  display: flex;
-  position: fixed;
-  text-align: center;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -75%);
-}
-
 .txtfonas {
   display: flex;
   position: relative;
