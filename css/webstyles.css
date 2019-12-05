@@ -1009,7 +1009,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: fixed;
   top: 20px;
   right: 30px;
-  z-index: 9999;
+  z-index: 9000;
   font-size: 14px;
   border: none;
   outline: none;
@@ -1499,4 +1499,123 @@ input[type=submit2]:focus {
     align-self: center;
     flex: 1 1 35em;
   }
+}
+
+#topbtn3 {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  z-index: 9000;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #cc0040;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+#topbtn3:hover {
+  background-color: #9400D3;
+}
+
+#fonas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 25, 24, 0.6);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 9001;
+  visibility:hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+#pic {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 9999;
+}
+
+.progress {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 100;
+  background-color: #262626;
+  height: 12px;
+  animation: animate-stripes 0.6s linear infinite;
+  animation-direction: reverse;
+  animation-duration: 2.5s;
+}
+.stripes {
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, .15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, .15) 50%,
+      rgba(255, 255, 255, .15) 75%,
+      transparent 75%,
+      transparent
+  );
+}
+.progress-1{
+  width: 16.6%;
+  height: 12px;
+  background-color: #cc0040;
+  opacity: 0.7;
+}
+@keyframes animate-stripes {
+  0% {
+      background-position: 0 0;
+  }
+
+  100% {
+      background-position: 60px 0;
+  }
+}
+
+#intro {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.introbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 25, 24, 1);
+  animation: introplug 6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.introsh{
+  position: absolute;
+  top: 0vh;
+  left: 100%;
+  transform: translate3d(-50%, 0, 0);
+  opacity: 0.2;
+  animation: trislide 2s;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 470px 260px 0 260px;
+  border-color: #52525260 transparent transparent transparent;
+}
+
+@keyframes introplug {
+  0% {opacity: 1;}
+  85% {opacity: 1;}
+  100% {opacity: 0;}
 }

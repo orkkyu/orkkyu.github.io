@@ -15,8 +15,25 @@
   </head>
 
 <body>
+  <div id="intro">
+    <div class="introbg">
+    <div class="introsh"></div>
+  </div>
+  </div>
+
     <div id="header">
-      
+
+      <div id="fonas"> 
+        <div id="pic">
+            <img src="veikimas.png" alt="Story veikimo procesas">
+        </div>
+        <div id="invisdiv"></div>
+      </div>
+
+      <div class="progress stripes">
+        <div class="progress-1"></div>
+      </div>
+
       <div id="bg"></div>
       <div class="tri1 dva"></div>
       <div class="tri2 dva"></div>
@@ -47,6 +64,7 @@
 -->
 <div id="hmbrnavbg"> </div>
  
+<div id="fonas" style="opacity: 0;display: none;"> </div>
 
   <div class="juostafix">
         <div class="juostahdr gradienthdr"></div>
@@ -88,6 +106,7 @@
  </div>
  
 <a href="index.html"><button id="topbtn2">Fck off</button></a>
+<button id="topbtn3" title="diagrama">Veikimas</button>
     
   <section class="footerus dva">
  
@@ -119,6 +138,33 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("hmbrnavbg").style.display = "none";
 }
+
+function picpopppp(){
+  document.getElementById('fonas').style.display = "flex",
+  document.getElementById('fonas').style.opacity = "1",
+  document.getElementById('fonas').style.transition = "0.3s ease";
+}
+
+/* pic ijungimas */
+document.getElementById('topbtn3').onclick = function()
+{
+  document.getElementById('fonas').style.visibility = "visible",
+  document.getElementById('fonas').style.opacity = "1";
+}
+/* pic isjungimas */
+document.getElementById('invisdiv').onclick = function()
+{
+  document.getElementById('fonas').style.visibility = "hidden",
+  document.getElementById('fonas').style.opacity = "0";
+}
+
+function introOFF(){
+    document.getElementById('intro').style.display="none";
+}
+window.onload = function() {
+   setTimeout(introOFF, 6000);
+};
+
     </script>
 </body>
 
