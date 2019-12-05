@@ -183,16 +183,6 @@ p {
   transform: translate3d(-50%, 0, 0);
 }
 
-.shrink {
-  background-image: linear-gradient(to top, #1f1d1c, rgba(40, 37, 36, 0.5));
-  height: 15vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
 @media only screen and (max-width: 600px) {
   #headertxt p, .tri1, .tri2, .tri3, .tri4, .tri5 {
     display: none;
@@ -1589,6 +1579,7 @@ input[type=submit2]:focus {
   justify-content: center;
   align-content: center;
   align-items: center;
+  flex-wrap: wrap;
   z-index: 9999;
 }
 .introbg {
@@ -1596,26 +1587,170 @@ input[type=submit2]:focus {
   width: 100%;
   height: 100%;
   background: rgba(26, 25, 24, 1);
-  animation: introplug 6s ease-in-out;
+  animation: introplug 4s ease;
   animation-fill-mode: forwards;
 }
 
 .introsh{
+  clip-path: polygon(50% 100%, 100% 0, 0 0);
+  width: 150vh;
+  height: 138vh;
+  background-color: #272727;
   position: absolute;
-  top: 0vh;
-  left: 100%;
+  left: 5%;
   transform: translate3d(-50%, 0, 0);
-  opacity: 0.2;
-  animation: trislide 2s;
-  width: 0;
+  opacity: 1;
+  animation: introslide 5s ease;
+  animation-fill-mode: forwards;
+}
+.introsh2 {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 150vh;
+  height: 138vh;
+  background-color: #272727;
+  position: absolute;
+  bottom: 0vh;
+  left: 50%;
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0);
+  animation: introslidebot 5s ease;
+  animation-fill-mode: forwards;
+}
+.introsh3{
+  clip-path: polygon(50% 100%, 100% 0, 0 0);
+  width: 150vh;
+  height: 138vh;
+  background-color: #272727;
+  position: absolute;
+  left: 95%;
+  transform: translate3d(-50%, 0, 0);
+  opacity: 1;
+  animation: introslide 5s ease;
+  animation-fill-mode: forwards;
+}
+
+p.intro {
+  font-family: 'Jura', sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ca153c, #7443e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 9999;
+  animation: introtxt 4s ease;
+  animation-fill-mode: forwards;
+  margin-bottom: 0;
+}
+p.sub {
+  font-family: 'Jura', sans-serif;
+  letter-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 9999;
+  animation: introtxt 4s ease;
+  animation-fill-mode: forwards;
+}
+.break {
+  flex-basis: 100%;
   height: 0;
-  border-style: solid;
-  border-width: 470px 260px 0 260px;
-  border-color: #52525260 transparent transparent transparent;
 }
 
 @keyframes introplug {
   0% {opacity: 1;}
   85% {opacity: 1;}
   100% {opacity: 0;}
+}
+
+@keyframes introslide {
+  0% {top: -140vh;}
+  20% {top: 0;}
+  70% {top: 0;}
+  100% {top: -140vh;}
+}
+@keyframes introslidebot {
+  0% {bottom: -140vh;}
+  20% {bottom: 0;}
+  70% {bottom: 0;}
+  100% {bottom: -140vh;}
+}
+@keyframes introtxt {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+#strip {
+	width: 5vh;
+	height: 90vh;
+	left: 0%;
+  position: absolute;
+  z-index: 9999;
+	background: linear-gradient(0deg, rgba(164, 
+	0, 217, 0) 0%, rgba(164, 0, 217, 0.3) 35%, 
+	rgba(255, 67, 134, 0.3) 65%, rgba(255, 67, 
+  134, 0) 100%);
+  animation: stripslide 3s ease;
+  animation-fill-mode: forwards;
+}
+#strip2 {
+	width: 5vh;
+	height: 90vh;
+	left: 50%;
+  position: absolute;
+  z-index: 9999;
+	background: linear-gradient(0deg, rgba(164, 
+	0, 217, 0) 0%, rgba(204, 0, 82, 0.3) 20%, 
+	rgba(255, 102, 0, 0.3) 80%, rgba(255, 67, 
+  134, 0) 100%);
+  animation: stripslide2 3s ease;
+  animation-fill-mode: forwards;
+}
+#strip3 {
+	width: 90vh;
+	height: 5vh;
+  position: absolute;
+  z-index: 9999;
+	background: linear-gradient(90deg, rgba(164, 
+	0, 217, 0) 0%, rgba(204, 0, 82, 0.3) 20%, 
+	rgba(255, 102, 0, 0.3) 80%, rgba(255, 67, 
+  134, 0) 100%);
+  animation: stripslide3 3s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stripslide {
+  0% {transform: translate3d(60vh, -140%, 0) rotateZ(30deg);}
+  30% {transform: translate3d(80vh, -100%, 0) rotateZ(30deg);}
+  100% {transform: translate3d(00vh, 100%, 0) rotateZ(25deg);}
+}
+@keyframes stripslide2 {
+  0% {transform: translate3d(60vh, 100%, 0) rotateZ(-30deg);}
+  30% {transform: translate3d(80vh, 100%, 0) rotateZ(-30deg);}
+  100% {transform: translate3d(00vh, -100%, 0) rotateZ(-25deg);}
+}
+@keyframes stripslide3 {
+  0% {left: -80%;bottom: 3%;}
+  30% {left: -80%;bottom: 3%;}
+  100% {left: 100%;bottom: 3%;}
+}
+@media screen and (max-width: 992px) {
+  @keyframes stripslide {
+    0% {transform: translate3d(60vh, -140%, 0) rotateZ(30deg);}
+    30% {transform: translate3d(40vh, -100%, 0) rotateZ(30deg);}
+    100% {transform: translate3d(-40vh, 100%, 0) rotateZ(25deg);}
+  }
+  @keyframes stripslide2 {
+    0% {transform: translate3d(60vh, 100%, 0) rotateZ(-30deg);}
+    30% {transform: translate3d(70vh, 100%, 0) rotateZ(-30deg);}
+    100% {transform: translate3d(00vh, -100%, 0) rotateZ(-25deg);}
+  }
+  @keyframes stripslide3 {
+    0% {left: -150%;bottom: 3%;}
+    30% {left: -150%;bottom: 3%;}
+    100% {left: 100%;bottom: 3%;}
+  }
 }
