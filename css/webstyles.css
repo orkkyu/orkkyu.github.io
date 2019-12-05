@@ -309,7 +309,7 @@ ul li:hover:nth-child(9) a {
 #hmbrnavbg {
   position: fixed;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   background: rgba(26, 25, 24, 0.6);
   z-index: 10;
   display: none;
@@ -1198,43 +1198,83 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .tri1.dva-dva {
-  animation: trislidedva 2s, trislidetres 5s infinite;
+  animation: trislidedva 2s, trislidetres 9s infinite;
 }
-
 .tri2.dva-dva {
-  animation: trislidebotdva 2s, trislidebottres 5s infinite;
+  animation: trislidebotdva 2s, trislidebottres 9s infinite;
 }
-
 .tri3.dva-dva {
-  animation: trislidedva 2, trislidetres 5s infinite;
+  animation: trislidedva 2s, trislidetres 9s infinite;
 }
-
 .tri4.dva-dva {
-  animation: trislidedva 2s, trislidetres 5s infinite;
+  animation: trislidedva 2s, trislidetres 9s infinite;
 }
-
 .tri5.dva-dva {
-  animation: trislidebotdva 2s, trislidebottres 5s infinite;
+  animation: trislidebotdva 2s, trislidebottres 9s infinite;
 }
 
 .tri1.dva-tri {
-  animation: trislidedva 2s, trislidetres 3s infinite;
+  animation: trislidedva 2s, trislidetres 7s infinite;
 }
-
 .tri2.dva-tri {
-  animation: trislidebotdva 2s, trislidebottres 3s infinite;
+  animation: trislidebotdva 2s, trislidebottres 7s infinite;
 }
-
 .tri3.dva-tri {
-  animation: trislidedva 2, trislidetres 3s infinite;
+  animation: trislidedva 2s, trislidetres 7s infinite;
+}
+.tri4.dva-tri {
+  animation: trislidedva 2s, trislidetres 7s infinite;
+}
+.tri5.dva-tri {
+  animation: trislidebotdva 2s, trislidebottres 7s infinite;
 }
 
-.tri4.dva-tri {
+.tri1.dva-ktr {
+  animation: trislidedva 2s, trislidetres 5s infinite;
+}
+.tri2.dva-ktr {
+  animation: trislidebotdva 2s, trislidebottres 5s infinite;
+}
+.tri3.dva-ktr {
+  animation: trislidedva 2s, trislidetres 5s infinite;
+}
+.tri4.dva-ktr {
+  animation: trislidedva 2s, trislidetres 5s infinite;
+}
+.tri5.dva-ktr {
+  animation: trislidebotdva 2s, trislidebottres 5s infinite;
+}
+
+.tri1.dva-pnk {
   animation: trislidedva 2s, trislidetres 3s infinite;
 }
-
-.tri5.dva-tri {
+.tri2.dva-pnk {
   animation: trislidebotdva 2s, trislidebottres 3s infinite;
+}
+.tri3.dva-pnk {
+  animation: trislidedva 2s, trislidetres 3s infinite;
+}
+.tri4.dva-pnk {
+  animation: trislidedva 2s, trislidetres 3s infinite;
+}
+.tri5.dva-pnk {
+  animation: trislidebotdva 2s, trislidebottres 3s infinite;
+}
+
+.tri1.dva-ses {
+  animation: trislidedva 2s, trislidetres 2s infinite;
+}
+.tri2.dva-ses {
+  animation: trislidebotdva 2s, trislidebottres 2s infinite;
+}
+.tri3.dva-ses {
+  animation: trislidedva 2s, trislidetres 2s infinite;
+}
+.tri4.dva-ses {
+  animation: trislidedva 2s, trislidetres 2s infinite;
+}
+.tri5.dva-ses {
+  animation: trislidebotdva 2s, trislidebottres 2s infinite;
 }
 
 .storytxt {
@@ -1278,16 +1318,42 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     *****/
 
 .faillvl1 {
-  box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.137), inset 0 0 12vw rgba(255, 0, 43, 0.068);
+  box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.05), inset 0 0 12vw rgba(255, 0, 43, 0.05);
   margin: 0;
 }
-
 .faillvl2 {
-  box-shadow: inset 0 0 12vw rgba(255, 0, 0, 0.3), inset 0 0 15vw rgba(255, 0, 43, 0.1);
+  box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.1), inset 0 0 12vw rgba(255, 0, 43, 0.1);
+  margin: 0;
+}
+.faillvl3 {
+  box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.15), inset 0 0 12vw rgba(255, 0, 43, 0.15);
+  margin: 0;
+}
+.faillvl4 {
+  box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.2), inset 0 0 12vw rgba(255, 0, 43, 0.2);
+  margin: 0;
+}
+.faillvl5 {
+  box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.25), inset 0 0 12vw rgba(255, 0, 43, 0.25);
   margin: 0;
 }
 
-.youdiedbg {
+.youdiedbg1 {
+  filter: grayscale(10%);
+}
+.youdiedbg2 {
+  filter: grayscale(20%);
+}
+.youdiedbg3 {
+  filter: grayscale(30%);
+}
+.youdiedbg4 {
+  filter: grayscale(40%);
+}
+.youdiedbg5 {
+  filter: grayscale(50%);
+}
+.youdiedbg6 {
   filter: grayscale(100%);
 }
 
@@ -1330,7 +1396,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   animation: youdiedtxt 6s;
 }
 
-.youdiedtxt.sub {
+.youdiedtxt.subb {
   padding: 0;
   font-size: 2rem;
   margin-top: -20px;
@@ -1715,8 +1781,8 @@ p.sub {
   position: absolute;
   z-index: 9999;
 	background: linear-gradient(90deg, rgba(164, 
-	0, 217, 0) 0%, rgba(204, 0, 82, 0.3) 20%, 
-	rgba(255, 102, 0, 0.3) 80%, rgba(255, 67, 
+	0, 217, 0) 0%, rgba(112, 0, 204, 0.3) 20%, 
+	rgba(26, 198, 255, 0.3) 80%, rgba(255, 67, 
   134, 0) 100%);
   animation: stripslide3 3s ease;
   animation-fill-mode: forwards;
@@ -1749,8 +1815,183 @@ p.sub {
     100% {transform: translate3d(00vh, -100%, 0) rotateZ(-25deg);}
   }
   @keyframes stripslide3 {
-    0% {left: -150%;bottom: 3%;}
-    30% {left: -150%;bottom: 3%;}
+    0% {left: -200%;bottom: 3%;}
+    30% {left: -200%;bottom: 3%;}
     100% {left: 100%;bottom: 3%;}
+  }
+}
+
+.tribig {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 100vh;
+  height: 88vh;
+  background: linear-gradient(to top, #282524be, #28252400), url(../img/hdrbig.png) no-repeat center bottom;
+  background-size: 160%;
+  position: absolute;
+  bottom: 0vh;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+@supports (background-blend-mode: overlay) {
+  .tribig.yy {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 100% 100000%;
+    background-blend-mode: overlay;
+    filter: grayscale(80%);
+  }
+  .tribig.vns {
+    background-image: url(../img/hdrbig.png);
+    background-position: center;
+    background-size: 100%, 0% 0%, 0% 0%;
+    background-blend-mode: overlay;
+    filter: grayscale(50%);
+  }
+  .tribig.du {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 0% 0%;
+    background-blend-mode: overlay;
+    filter: grayscale(65%);
+  }
+  .tribig.trys {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 100% 100%;
+    background-blend-mode: overlay;
+    filter: grayscale(75%);
+  }
+  .tri2.vns {
+    background-image: url(../img/header3.jpg);
+    background-position: center;
+    background-size: 100%, 0% 0%, 0% 0%;
+    background-blend-mode: overlay;
+    filter: grayscale(50%);
+  }
+  .tri2.du {
+    background-image: url(../img/header3.jpg), url(../img/header3.jpg);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 0% 0%;
+    background-blend-mode: overlay;
+    filter: grayscale(65%);
+  }
+  .tri2.trys {
+    background-image: url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 100% 100%;
+    background-blend-mode: overlay;
+    filter: grayscale(75%);
+  }
+  .tri2.yy {
+    background-image: url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 100% 100000%;
+    background-blend-mode: overlay;
+    filter: grayscale(80%);
+  }
+  .tri5.vns {
+    background-image: url(../img/header2.jpg);
+    background-position: center;
+    background-size: 100%, 0% 0%, 0% 0%;
+    background-blend-mode: overlay;
+    filter: grayscale(50%);
+  }
+  .tri5.du {
+    background-image: url(../img/header2.jpg), url(../img/header2.jpg);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 0% 0%;
+    background-blend-mode: overlay;
+    filter: grayscale(65%);
+  }
+  .tri5.trys {
+    background-image: url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 100% 100%;
+    background-blend-mode: overlay;
+    filter: grayscale(75%);
+  }
+  .tri5.yy {
+    background-image: url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 100% 100000%;
+    background-blend-mode: overlay;
+    filter: grayscale(80%);
+  }
+}
+
+.hpicon {
+  background-image: url(../img/HP.png);
+  position: absolute;
+  top: 80vh;
+  left: 5%;
+  width: 180px;
+  height: 150px;
+  animation: hpbeat 10s ease infinite;
+}
+.hpicon.lvl2{
+animation: hpbeat 8s ease infinite;
+}
+.hpicon.lvl3{
+  animation: hpbeat 6s ease infinite;
+  }
+  .hpicon.lvl4{
+    animation: hpbeat 4s ease infinite;
+    }
+    .hpicon.lvl5{
+      animation: hpbeat 3s ease infinite;
+      }
+      .hpicon.lvl6{
+        animation: hpbeat 2s ease infinite;
+        }
+@keyframes hpbeat {
+  0% {transform: scale(0.5);}
+  5% {transform: scale(0.4);}
+  10% {transform: scale(0.5);}
+  15% {transform: scale(0.4);}
+  25% {transform: scale(0.5);}
+  30% {transform: scale(0.4);}
+  35% {transform: scale(0.5);}
+  40% {transform: scale(0.4);}
+  50% {transform: scale(0.5);}
+  55% {transform: scale(0.4);}
+  60% {transform: scale(0.5);}
+  65% {transform: scale(0.4);}
+  75% {transform: scale(0.5);}
+  80% {transform: scale(0.4);}
+  85% {transform: scale(0.5);}
+  90% {transform: scale(0.4);}
+  100% {transform: scale(0.5);}
+}
+
+@media screen and (max-width: 900px) {
+  .hpicon {
+    top: initial;
+    left: initial;
+    position: relative;
+    margin-bottom: -10%;
+  }
+  .hpfix {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hpicon {
+    top: initial;
+    left: initial;
+  }
+  .hpfix {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hpicon {
+    top: initial;
+    left: initial;
+  }
+  .hpfix {
+    display: flex;
+    justify-content: center;
   }
 }
