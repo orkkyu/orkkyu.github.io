@@ -15,6 +15,21 @@
   </head>
 
 <body>
+    <div id="intro">
+        <p class="intro">Laimėjai!</p>
+        <div class="break"> </div>
+        <p class="sub">America, fuck yeah</p>
+        <div class="introbg"></div>
+        <div class="introsh"></div>
+        <div class="introsh2"></div>
+        <div class="introsh3"></div>
+        <div class="strip"></div>
+        <div class="strip2"></div>
+        <div class="strip3"></div>
+        <div class="strip vns"></div>
+        <div class="strip2 du"></div>
+        <div class="strip3 trys"></div>
+      </div>
     <div id="header">
       
       <div id="bg"></div>
@@ -36,10 +51,10 @@
       <span class="navbtnon" onclick="openNav()">&#9776;</span>
 <div id="mySidenav" class="hmbrnav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">YEET</a>
-  <a href="ani.html">Enimeisn</a>
-  <a href="banners.html">Bane</a>
-  <a href="soon.html">Soon™</a>
+  <a href="../index.html">YEET</a>
+  <a href="../ani.html">Enimeisn</a>
+  <a href="../banners.html">Bane</a>
+  <a href="../soon.html">Soon™</a>
 </div>  
     </div>
 
@@ -144,6 +159,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("hmbrnavbg").style.display = "none";
 }
+function introOFF() {
+        document.getElementById('intro').style.display = "none";
+      }
+      window.onload = function () {
+        setTimeout(introOFF, 4500);
+      };
     </script>
 </body>
 

@@ -309,8 +309,8 @@ ul li:hover:nth-child(9) a {
 #hmbrnavbg {
   position: fixed;
   width: 100%;
-  max-height: 100%;
-  background: rgba(26, 25, 24, 0.6);
+  height: 100%;
+  background: rgba(26, 25, 24, 0.7);
   z-index: 10;
   display: none;
 }
@@ -761,7 +761,7 @@ hr.info {
 }
 
 .container {
-  flex-shrink: 0;
+  flex: 0 1 auto;
   position: relative;
 }
 
@@ -1320,41 +1320,74 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .faillvl1 {
   box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.05), inset 0 0 12vw rgba(255, 0, 43, 0.05);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .faillvl2 {
   box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.1), inset 0 0 12vw rgba(255, 0, 43, 0.1);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .faillvl3 {
   box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.15), inset 0 0 12vw rgba(255, 0, 43, 0.15);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .faillvl4 {
   box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.2), inset 0 0 12vw rgba(255, 0, 43, 0.2);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .faillvl5 {
   box-shadow: inset 0 0 9vw rgba(255, 0, 0, 0.25), inset 0 0 12vw rgba(255, 0, 43, 0.25);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 .youdiedbg1 {
   filter: grayscale(10%);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .youdiedbg2 {
   filter: grayscale(20%);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .youdiedbg3 {
   filter: grayscale(30%);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .youdiedbg4 {
   filter: grayscale(40%);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .youdiedbg5 {
   filter: grayscale(50%);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 .youdiedbg6 {
   filter: grayscale(100%);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 /*.youdiedcunt {
@@ -1595,6 +1628,7 @@ input[type=submit2]:focus {
   margin: 0;
   position: relative;
   z-index: 9999;
+  overflow: scroll;
 }
 
 .progress {
@@ -1708,6 +1742,7 @@ p.intro {
   animation: introtxt 4s ease;
   animation-fill-mode: forwards;
   margin-bottom: 0;
+  text-align: center;
 }
 p.sub {
   font-family: 'Jura', sans-serif;
@@ -1718,6 +1753,7 @@ p.sub {
   z-index: 9999;
   animation: introtxt 4s ease;
   animation-fill-mode: forwards;
+  text-align: center;
 }
 .break {
   flex-basis: 100%;
@@ -1749,7 +1785,7 @@ p.sub {
   100% {opacity: 0;}
 }
 
-#strip {
+.strip {
 	width: 5vh;
 	height: 90vh;
 	left: 0%;
@@ -1762,7 +1798,7 @@ p.sub {
   animation: stripslide 3s ease;
   animation-fill-mode: forwards;
 }
-#strip2 {
+.strip2 {
 	width: 5vh;
 	height: 90vh;
 	left: 50%;
@@ -1775,7 +1811,7 @@ p.sub {
   animation: stripslide2 3s ease;
   animation-fill-mode: forwards;
 }
-#strip3 {
+.strip3 {
 	width: 90vh;
 	height: 5vh;
   position: absolute;
@@ -1803,6 +1839,36 @@ p.sub {
   30% {left: -80%;bottom: 3%;}
   100% {left: 100%;bottom: 3%;}
 }
+
+.strip.vns {
+  animation: stripslide11 2s ease;
+  animation-fill-mode: forwards;
+}
+.strip2.du {
+  animation: stripslide22 2s ease;
+  animation-fill-mode: forwards;
+}
+.strip3.trys {
+  animation: stripslide33 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes stripslide11 {
+  0% {transform: translate3d(60vh, -140%, 0) rotateZ(30deg);}
+  30% {transform: translate3d(120vh, -100%, 0) rotateZ(30deg);}
+  100% {transform: translate3d(20vh, 100%, 0) rotateZ(25deg);}
+}
+@keyframes stripslide22 {
+  0% {transform: translate3d(60vh, 100%, 0) rotateZ(-30deg);}
+  30% {transform: translate3d(60vh, 100%, 0) rotateZ(-30deg);}
+  100% {transform: translate3d(-20vh, -100%, 0) rotateZ(-25deg);}
+}
+@keyframes stripslide33 {
+  0% {left: -200%;bottom: 50%;}
+  30% {left: -200%;bottom: 50%;}
+  100% {left: 100%;bottom: 50%;}
+}
+
+
 @media screen and (max-width: 992px) {
   @keyframes stripslide {
     0% {transform: translate3d(60vh, -140%, 0) rotateZ(30deg);}
@@ -1821,17 +1887,7 @@ p.sub {
   }
 }
 
-.tribig {
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  width: 100vh;
-  height: 88vh;
-  background: linear-gradient(to top, #282524be, #28252400), url(../img/hdrbig.png) no-repeat center bottom;
-  background-size: 160%;
-  position: absolute;
-  bottom: 0vh;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
-}
+
 @supports (background-blend-mode: overlay) {
   .tribig.yy {
     background-image: url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png);
@@ -1943,6 +1999,10 @@ animation: hpbeat 8s ease infinite;
       .hpicon.lvl6{
         animation: hpbeat 2s ease infinite;
         }
+        .hpicon.desine {
+          left: 82.5%;
+        }
+        
 @keyframes hpbeat {
   0% {transform: scale(0.5);}
   5% {transform: scale(0.4);}
@@ -1970,6 +2030,12 @@ animation: hpbeat 8s ease infinite;
     position: relative;
     margin-bottom: -10%;
   }
+  .hpicon.desine{
+    top: initial;
+    left: initial;
+    position: relative;
+    margin-bottom: 5%;
+  }
   .hpfix {
     display: flex;
     justify-content: center;
@@ -1995,3 +2061,256 @@ animation: hpbeat 8s ease infinite;
     justify-content: center;
   }
 }
+
+.main1bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #262626;
+}
+.main1bg1{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(29, 29, 29, 0.93);
+  z-index: 9999;
+}
+
+.main1kont {
+  flex-direction: column;
+  animation: fade 2s;
+}
+.main1kont1 {
+  flex-direction: column;
+  animation: fade 2s;
+  width: 60%;
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #cc0040;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+.loadfix {
+  top: 2vh;
+  left: 2vh;
+  position: absolute;
+  
+}.loadstuff {
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+}
+p.load {
+  font-family: 'Jura', sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 3vh;
+  left: 7vw;
+}
+@media screen and (max-width: 768px) {
+p.load {
+  top: 10vh;
+}
+}
+
+#headertxt.ch6fail{
+font-size: 6rem;
+background: rgb(31, 29, 28, .4);
+}
+
+
+/**** THE GOOD BOY
+****/
+
+@supports (background-blend-mode: overlay) {
+  .tribig.lvl6 {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-size: 250%, 80%, 60%, 50%, 40%, 100%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(90%);
+  }
+  .tribig.lvl1 {
+    background-image: url(../img/hdrbig.png);
+    background-size: 235%, 0%, 0%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(50%);
+  }
+  .tribig.lvl2 {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-size: 250%, 80%, 0%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(60%);
+  }
+  .tribig.lvl3 {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-size: 250%, 80%, 60%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(65%);
+  }
+  .tribig.lvl4 {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-size: 250%, 80%, 60%, 50%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(80%);
+  }
+  /*.tribig.lvl5 {
+    background-image: url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png), url(../img/hdrbig.png);
+    background-size: 250%, 80%, 60%, 50%, 40%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(80%);
+  }*/
+
+  .tri2.lvl6 {
+    background-image: url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg);
+    background-size: 250%, 80%, 60%, 50%, 40%, 100%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(90%);
+  }
+  .tri2.lvl1 {
+    background-image: url(../img/header3.jpg);
+    background-size: 235%, 0%, 0%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(50%);
+  }
+  .tri2.lvl3 {
+    background-image: url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg);
+    background-size: 250%, 80%, 60%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(65%);
+  }
+  .tri2.lvl2 {
+    background-image: url(../img/header3.jpg), url(../img/header3.jpg);
+    background-size: 250%, 80%, 0%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(65%);
+  }
+  .tri2.lvl4 {
+    background-image: url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg), url(../img/header3.jpg);
+    background-size: 250%, 80%, 60%, 50%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(80%);
+  }
+
+
+  .tri5.lvl6 {
+    background-image: url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg);
+    background-size: 250%, 80%, 60%, 50%, 40%, 100%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(90%);
+  }
+  .tri5.lvl1 {
+    background-image: url(../img/header2.jpg);
+    background-size: 235%, 0%, 0%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(50%);
+  }
+  .tri5.lvl3 {
+    background-image: url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg);
+    background-size: 250%, 80%, 60%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(65%);
+  }
+  .tri5.lvl2 {
+    background-image: url(../img/header2.jpg), url(../img/header2.jpg);
+    background-size: 250%, 80%, 0%, 0%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(65%);
+  }
+  .tri5.lvl4 {
+    background-image: url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg), url(../img/header2.jpg);
+    background-size: 250%, 80%, 60%, 50%, 0%, 0%;
+    background-position: 50%, 80%, 30%, 0;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    filter: saturate(80%);
+  }
+}
+
+body.lvl1 {
+  box-shadow: inset 0 0 7vw rgba(255, 0, 34, 0.15), inset 0 0 10vw rgba(0, 153, 255, 0.15);
+}
+body.lvl2 {
+  box-shadow: inset 0 0 7vw rgba(255, 0, 34, 0.25), inset 0 0 10vw rgba(0, 153, 255, 0.20);
+}
+body.lvl3 {
+  box-shadow: inset 0 0 7vw rgba(255, 0, 34, 0.30), inset 0 0 10vw rgba(0, 153, 255, 0.25);
+}
+body.lvl4 {
+  box-shadow: inset 0 0 7vw rgba(255, 0, 34, 0.40), inset 0 0 10vw rgba(0, 153, 255, 0.30);
+}
+body.lvl5 {
+  box-shadow: inset 0 0 7vw rgba(255, 0, 34, 0.45), inset 0 0 10vw rgba(0, 153, 255, 0.35);
+}
+
